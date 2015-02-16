@@ -1,0 +1,12 @@
+{
+  "name": "nodemailer-demo",
+  "version": "0.0.1",
+  "description": "nodemailer-demo",
+  "keywords": [
+    "email"
+  ],
+  "author": "luoyjx",
+  "dependencies": {
+    "nodemailer": "0.3.43"
+  }
+}
