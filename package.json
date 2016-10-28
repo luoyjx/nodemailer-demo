@@ -1,12 +1,15 @@
 {
   "name": "nodemailer-demo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "nodemailer-demo",
   "keywords": [
-    "email"
+    "email",
+    "node.js",
+    "aliyun"
   ],
   "author": "luoyjx",
   "dependencies": {
-    "nodemailer": "0.3.43"
+    "nodemailer": "^2.5.0",
+    "nodemailer-smtp-transport": "^2.6.0"
   }
 }

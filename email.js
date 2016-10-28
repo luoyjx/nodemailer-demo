@@ -1,14 +1,14 @@
-var nodemailer = require('nodemailer');
+var mailer        = require('nodemailer');
+var smtpTransport = require('nodemailer-smtp-transport');
 
-var transporter = nodemailer.createTransport('SMTP', {
+var transport = mailer.createTransport(smtpTransport({
     host: 'smtp.gaoqixhb.com',
-	secureConnection: true,
-    port: 465,
+    port: 25,
     auth: {
         user: 'system@gaoqixhb.com',
-        pass: '邮箱密码'
+        pass: 'your password'
     }
-});
+}));
 
 var mailOptions = {
     from: '搞起博客 <system@gaoqixhb.com>', // 如果不加<xxx@xxx.com> 会报语法错误
@@ -18,7 +18,7 @@ var mailOptions = {
 	'<p> 示例分享到了github上：<a href=\"https://github.com/luoyjx/nodemailer-demo\">https://github.com/luoyjx/nodemailer-demo</a></p>'// html body
 };
 
-transporter.sendMail(mailOptions, function(error, info){
+transport.sendMail(mailOptions, function(error, info){
     if(error){
         console.log(error);
     }else{
