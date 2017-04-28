@@ -9,7 +9,7 @@
   ],
   "author": "luoyjx",
   "dependencies": {
-    "nodemailer": "^2.5.0",
+    "nodemailer": "^4.0.1",
     "nodemailer-smtp-transport": "^2.6.0"
   }
 }
