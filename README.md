@@ -1,5 +1,7 @@
 # nodemailer-demo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/luoyjx/nodemailer-demo.svg)](https://greenkeeper.io/)
+
 # v0.0.2 / 2016-10-28
 
 * nodemailer@2.5.0
